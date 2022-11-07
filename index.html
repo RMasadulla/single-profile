@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="assets/css/login.css" >
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="app">
+            <div id="top">
+                <img id="logo" src="assets/icons/logo.png">
+                <div style="text-align: center"><span
+                        style="font-family: 'Arimo', serif; font-weight: 700">It</span> helps you to share and
+                    exchange<br>your contact details with people.</div>
+            </div>
+            <div id="form">
+                <form method="POST" action="profile.html" novalidate="">
+                    <input type="hidden" name="_token" value="QVxiiaPtX37EOEM8uWqtfMc4WmcW9HWpwxxPipl2">
+                    <div>
+                        <div class="input-box">
+                            <input id="email" type="email" name="email" placeholder="email address" value=""
+                                autocomplete="email" class="" autofocus="" required="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-box">
+                            <input id="password" type="password" name="password" placeholder="password" value=""
+                                autocomplete="current-password" class="" required="">
+                            <img class="icon  password-visible-toggle " src="assets/icons/visible.svg">
+                        </div>
+                    </div>
+                    <a id="forgot" class="button small" href="forgotpassword.html">FORGOT PASSWORD? </a>
+                    <div id="actions">
+                        <a class="button bordered highlight first" href="#">GET YOUR CARD</a>
+                        <button class="button bordered" type="submit"> LOGIN </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/events.js" defer></script>
+</body>
+
+</html>
